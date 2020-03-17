@@ -1,0 +1,5 @@
+/* pages/book/book.wxss */
+page {
+  padding: 30rpx;
+  background: #fff;
+}
