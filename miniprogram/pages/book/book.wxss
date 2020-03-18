@@ -2,4 +2,39 @@
 page {
   padding: 30rpx;
   background: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.brief-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+}
+
+.brief-container .cover {
+  display: block;
+  width: 192rpx;
+  max-height: 288rpx;
+  margin-right: 20rpx;
+}
+
+.brief-container .name {
+  font-size: 32rpx;
+  max-width: 320rpx;
+}
+
+.brief-container .rating {
+  font-size: 26rpx;
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+}
+
+.brief-container .abstract {
+  font-size: 24rpx;
+  color: #999;
+  max-width: 320rpx;
 }

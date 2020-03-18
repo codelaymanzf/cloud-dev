@@ -4,3 +4,14 @@
 <button type="primary" bindtap="takePhoto">拍照</button> <image mode="widthFix" src="{{src}}"></image> -->
 
 <button type="primary" catchtap="scanCode">扫码查看图书评分</button>
+
+<view class="brief-container" wx:if="{{bookBrief}}">
+  <image src="{{bookBrief.cover_url}}" mode="aspectFill" class="cover"></image>
+  <view class="name-rating">
+    <view class="name">{{bookBrief.title}}</view>
+    <view class="rating">豆瓣评分: {{bookBrief.rating.value }} / 10</view>
+    <view class="abstract">{{bookBrief.abstract}}</view>
+  </view>
+</view>
+
+<!-- <button type="primary" catchtap="checkDetail" wx:if="{{bookBrief}}">查看详情</button> -->
